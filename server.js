@@ -18,13 +18,13 @@ app.use(express.json());
 // CREATE GET ROUTE
 app.get('/message', (req, res) => {
   res.json({ message: "Hello from server!" });
-  connection.query('SELECT * from test', (err, results) => {
-    if (err) {
-      console.error('Error executing query', err);
-      res.status(500).json({ error: 'Internal server error' });
-      return;
-    }
-  })
+  // connection.query('SELECT * from test', (err, results) => {
+  //   if (err) {
+  //     console.error('Error executing query', err);
+  //     res.status(500).json({ error: 'Internal server error' });
+  //     return;
+  //   }
+  // })
 });
 
 // START THE SERVER
