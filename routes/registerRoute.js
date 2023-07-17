@@ -6,7 +6,7 @@ const router = express.Router();
 const db = require('../database'); // Update the path based on your project structure
 
 // Registration route
-router.post('/register', async (req, res) => {
+router.post('/api/register', async (req, res) => {
   try {
     const { f_name, l_name, email, password } = req.body;
 

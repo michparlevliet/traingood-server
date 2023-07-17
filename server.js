@@ -27,7 +27,7 @@ app.use(express.json());
 
 // ROUTES
 const registerRoute = require('./routes/registerRoute');
-app.use('/api', registerRoute);
+app.use('/api/register', registerRoute);
 // app.use('/api', loginRoute);
 // app.use('/api', logoutRoute);
 
