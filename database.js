@@ -9,13 +9,17 @@ const connection = mysql2.createConnection({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
 });
+console.log(process.env.DB_USER, process.env.DB_PASS);
 
 connection.connect((err) => {
   if (err) {
     console.error('Error connecting to the database:', err);
     return;
   }
-  console.log('Connected to database.');
+  else {
+    console.log('Connected to database.');
+  }
+  
 });
 
 module.exports = connection.promise();
