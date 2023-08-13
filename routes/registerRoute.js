@@ -20,6 +20,8 @@ router.post('/api/register', async (req, res) => {
     // Using db.query as a promise (with .execute())
     const [rows] = await db.execute(query, [f_name, l_name, email, hashedPassword]);
 
+    console.log([rows]);
+
     res.status(201).json({ message: 'Registration successful' });
   } catch (error) {
     console.error('Error registering user:', error);

@@ -9,7 +9,7 @@ const connection = mysql2.createConnection({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME
 });
-console.log(process.env.DB_USER, process.env.DB_PASS);
+//console.log(process.env.DB_USER, process.env.DB_PASS);
 
 connection.connect((err) => {
   if (err) {
