@@ -23,3 +23,5 @@ connection.connect((err) => {
 });
 
 module.exports = connection.promise();
+
+// mysql://bd5d39fae3776e:331b930c@us-cdbr-east-06.cleardb.net/heroku_1a92d00af46bf97?reconnect=true

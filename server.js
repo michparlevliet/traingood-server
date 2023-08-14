@@ -7,9 +7,11 @@ const cors = require('cors');
 // TEST DB CONNECTION
 const connection = require('./database');
 
+app.use(cors({
+  origin: 'http://localhost:3000/'
+}));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
 app.use(express.json());
 
 // ROUTES
